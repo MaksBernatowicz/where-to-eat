@@ -12,13 +12,13 @@ const List = ({places}) => {
 
     return (
         <div className={classes.container}>
-            <Typography variant={"h4"}>Restaurants, Hotels & Attractions around you</Typography>
+            <Typography variant="h4">Restaurants, Hotels & Attractions around you</Typography>
             <FormControl className={classes.formControl}>
                 <InputLabel>Type</InputLabel>
                 <Select value={type} onChange={(e) => setType(e.target.value)}>
-                    <MenuItem value={"restaurants"}>Restaurants</MenuItem>
-                    <MenuItem value={"hotels"}>Hotels</MenuItem>
-                    <MenuItem value={"attractions"}>Attractions</MenuItem>
+                    <MenuItem value="restaurants">Restaurants</MenuItem>
+                    <MenuItem value="hotels">Hotels</MenuItem>
+                    <MenuItem value="attractions">Attractions</MenuItem>
                 </Select>
             </FormControl>
             <FormControl className={classes.formControl}>
